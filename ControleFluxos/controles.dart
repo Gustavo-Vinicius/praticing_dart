@@ -1,8 +1,19 @@
-void main()
-{
-  if(true)
+void main() {
+
+  int fibonacci(int n) 
   {
-    print('o If sendo executado');
+  
+    if (n == 0 || n == 1) return n;
+    return fibonacci(n - 1) + fibonacci(n - 2);
+  
   }
-  print('finalizou');
+
+  var result = fibonacci(0);
+
+  if(result == 0)
+  {
+    throw StateError('Valor nulo');
+  }
+
+  print(result);
 }

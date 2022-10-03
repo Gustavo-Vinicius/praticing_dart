@@ -1,4 +1,5 @@
 void main()
 {
-  print('Hello World');
+  int ano = 2022;
+  print('Hello $ano');
 }
