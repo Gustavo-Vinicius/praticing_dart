@@ -1,5 +1,6 @@
 void main() async {
-  String? nome = "Gustavo";
+ // String? nome = "Gustavo";
+ 
   Future<String?> cepFuture = getCepByName("Rua JK");
   late String? cep;
 
