@@ -28,7 +28,13 @@ class Pai {
   }
 }
 
-class Gustavo extends Pai {}
+class Gustavo implements Pai {
+  @override
+  String? falar() {
+    // TODO: implement falar
+    throw UnimplementedError();
+  }
+}
 
 class PessoaET extends Pessoa {
   String? comunicar() {
